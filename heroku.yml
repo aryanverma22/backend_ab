@@ -1,0 +1,7 @@
+build:
+  image: heroku/buildpacks:20
+  builder:
+    docker:
+      - heroku/pack:18
+    config:
+      rust: 1.53.0
