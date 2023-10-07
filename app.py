@@ -13,7 +13,7 @@ def run(config_name):
     secret_key = app.config['SECRET_KEY']
     if config_name:
         app.config.from_object(config_name)
-    app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql+psycopg2://postgres:postgres@localhost:5432/ab"
+    app.config['SQLALCHEMY_DATABASE_URI'] = "postgresql+psycopg2://postgres:hqoimvzaxhftiu:8857665ab8200572647dc7c9aecbf85ec7713de38448fd6bc1c1f1aba208a095@ec2-44-213-228-107.compute-1.amazonaws.com:5432/dbjntf8oshmfl1"
     return app
 app=run('')
 CORS(app,response= 'true')
