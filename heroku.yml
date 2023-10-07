@@ -4,4 +4,5 @@ build:
     docker:
       - heroku/pack:18
     config:
-      rust: 1.53.0
+      rust: 1.73.0
+      cargo: 1.73.0
